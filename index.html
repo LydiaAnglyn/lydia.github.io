@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lydia Anglyn - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            padding: 15px;
+        }
+        #home {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #about, #skills, #projects, #contact {
+            padding: 60px 0;
+        }
+        .btn-custom {
+            background-color: #6a11cb;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #2575fc;
+        }
+        .progress {
+            height: 25px;
+        }
+        .progress-bar {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Lydia Anglyn</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div>
+            <h1>Hello, I'm <span style="color: #ffdf65;">Lydia Anglyn</span></h1>
+            <p>A passionate web developer & designer</p>
+            <a href="#about" class="btn btn-custom">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container text-center">
+        <h2>About Me</h2>
+        <p>Hi! I'm Lydia, a creative front-end developer with experience in building modern, responsive websites. I love combining design and functionality to create seamless user experiences.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2 class="text-center">My Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>HTML & CSS</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+                </div>
+
+                <h5>JavaScript</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info" style="width: 80%;">80%</div>
+                </div>
+
+                <h5>Bootstrap</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 85%;">85%</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h5>React.js</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-primary" style="width: 70%;">70%</div>
+                </div>
+
+                <h5>Git & GitHub</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" style="width: 75%;">75%</div>
+                </div>
+
+                <h5>UI/UX Design</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-secondary" style="width: 60%;">60%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="portfolio.jpeg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A website that showcases creative portfolios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="calculator.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A dynamic blog platform with interactive features.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to drop me a message!</p>
+        <form class="mx-auto" style="max-width: 500px;">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom btn-block">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lydia Anglyn. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Smooth scrolling
+        $('a.nav-link').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 70
+            }, 800);
+        });
+    </script>
+</body>
+</html>
